@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "color-picker-game"
+    }
+  },
+  "defaultProject": "color-picker-game",
+  "cli": {
+    "analytics": "81a99300-6042-4b26-94c6-c0cbad2db708"
+  }
 }
