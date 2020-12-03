@@ -15,7 +15,7 @@ export class SigninComponent implements OnInit {
   authenticationFailed = null;
 
   constructor(private readonly fb: FormBuilder,
-              private playerSerive: PlayerService,
+              private playerService: PlayerService,
               private readonly router: Router) { }
 
   ngOnInit(): void {
@@ -27,7 +27,7 @@ export class SigninComponent implements OnInit {
   }
 
   signin(): void {
-    this.playerSerive.signin(this.signinRegister.value).pipe(
+    this.playerService.signin(this.signinRegister.value).pipe(
       tap(() => this.router.navigate(['index'])),
       catchError((error) => {
         return this.authenticationFailed =  error ;

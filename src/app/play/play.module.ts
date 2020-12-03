@@ -4,6 +4,7 @@ import {StartComponent} from '../start/start.component';
 import {BoxComponent} from '../box/box.component';
 import {RouterModule} from '@angular/router';
 import {PLAY_ROUTE} from './play.route';
+import {ReactiveFormsModule} from '@angular/forms';
 
 
 
@@ -12,6 +13,7 @@ import {PLAY_ROUTE} from './play.route';
   imports: [
     CommonModule,
     RouterModule.forChild(PLAY_ROUTE),
+    ReactiveFormsModule,
   ]
 })
 export class PlayModule { }
