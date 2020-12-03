@@ -1,1 +1,6 @@
-<p>signout works!</p>
+<app-spinner [active]="loading">
+  <h2 class="text-center"> Voulez vous vraiment vous déconnecter ? </h2>
+  <div class="text-center">
+    <button class="btn btn-danger" (click)="signout()"> OUI</button>
+  </div>
+</app-spinner>

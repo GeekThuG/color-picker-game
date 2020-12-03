@@ -1,1 +1,16 @@
-<p>signin works!</p>
+
+<div [formGroup]="signinRegister">
+  <div class="form-group text-center">
+
+    <div>
+      <label> Login <input class="form-control" formControlName="login" type="text" placeholder="Login"></label>
+    </div>
+
+    <div>
+      <label> Passe <input class="form-control" formControlName="passe" type="password" placeholder="password"></label>
+    </div>
+
+    <button class="btn btn-info" (click)="signin()" [disabled]="signinRegister.invalid">Validate</button>
+    <div *ngIf="authenticationFailed" class="alert alert-danger"> {{authenticationFailed}} </div>
+  </div>
+</div>

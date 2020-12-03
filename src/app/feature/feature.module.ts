@@ -7,6 +7,9 @@ import {SpinnerComponent} from '../spinner/spinner.component';
 
 @NgModule({
   declarations: [FormGroupComponent, SpinnerComponent],
+  exports: [
+    SpinnerComponent
+  ],
   imports: [
     CommonModule
   ]
