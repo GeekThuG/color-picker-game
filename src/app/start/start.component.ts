@@ -25,7 +25,6 @@ export class StartComponent implements OnInit {
   draw(): void {
     if (!this.gridForm.invalid) {
       this.grid = null;
-
     }
     return null;
 

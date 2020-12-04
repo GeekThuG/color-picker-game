@@ -1,4 +1,5 @@
 <div class="text-center">
+  <h2 class="text-center"> Index</h2>
   <a appIfNoPlayerDirective *ngIf="!isSignin" routerLink="/player/signin"> Signin </a>
-  <a appIfPlayerDirective routerLink="/play/start"> Start </a>
+  <a appIfPlayerDirective *ngIf="isSignin" routerLink="/play/start"> Start </a>
 </div>
